@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - /bin/bash index.html
+  tags:
+    - localrunner
+    - localshell
