@@ -1,0 +1,3 @@
+cloudbloggermyjob:
+  script:
+    - echo $CI_JOB_NAME
