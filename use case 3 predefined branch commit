@@ -1,0 +1,6 @@
+cloudbloggermyjob:
+  script:
+    - echo $CI_JOB_NAME
+    - echo $CI_COMMIT_MESSAGE
+    - echo $CI_COMMIT_TITLE
+    - echo $CI_COMMIT_BRANCH
