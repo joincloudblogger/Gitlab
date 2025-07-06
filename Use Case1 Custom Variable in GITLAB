@@ -1,0 +1,23 @@
+🔔 Note: You created three variables:
+NAME – with your name
+DESIGNATION – your job title
+MOBILE_NO – your mobile number
+
+🔔 Then you made a job called display_message.
+This job runs a command to print a message using those variables.
+The command will show something like:
+Hello GAURAV TEVATHIYA, AI ARCHITECT, +91 7503601662
+
+🔔 This script is written for GitLab CI/CD to run in a pipeline.
+In short:
+You set some details (name, job, phone) as variables and made a job that prints them in one message.
+
+###############################
+variables:
+  NAME: "GAURAV TEVATHIYA"
+  DESIGNATION: "AI ARCHITECT"
+  MOBILE_NO: "+91 7503601662"
+
+display_message:
+  script:
+    - echo "Hello $NAME, $DESIGNATION, $MOBILE_NO"
